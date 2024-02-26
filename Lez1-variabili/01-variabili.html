@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <h1>Variabili</h1>
+
+    <script>
+        // Dichiaro una variabile. Uso la parola chiave let e le assegno un nome 
+        let nome;
+
+        // Assegno un valore alla variabile nome
+        nome = "Milo";
+
+        console.log(nome);
+
+        // Dichiaro e assegno nello stesso momento
+        // Ricorda: le variabili vanno dichiarate in camelCase
+        let cognome = "Spandre";
+
+        console.log(nome, cognome);
+
+        // JavaScript è un linguaggio debolmente tipizzato, cioè conosce benissimo i tipi di dato, ma non siamo obbligati a dichiararli
+        let nomeStudente = 'Andrea'; // string
+        let cognomeStudente = 'Trapani';
+        let etaStudente = 26; // number
+        let nomeCorso = 'JAITA116';
+        let presenza = true; // boolean (true/false)
+
+        console.log("Ciao, mi chiamo " + nomeStudente + " " + cognomeStudente + " ho " + etaStudente + " anni. Partecipo a " + nomeCorso + " e oggi sono " + presenza);
+
+        nomeStudente = 'Francesco';
+
+        let presentazione = "Ciao, mi chiamo " + nomeStudente + " " + cognomeStudente + " ho " + etaStudente + " anni. Partecipo a " + nomeCorso + " e oggi sono " + presenza;
+
+        console.log(presentazione);
+
+        // let, più moderno e impedisce di dichiarare due variabili con lo stesso nome
+        // var, più datato e NON impedisce di dichiarare due variabili con lo stesso nome
+        // const, per dichiarare variabili con un valore immutato (es.: indirizzo database o valore numerico sempre uguale). In genere scritte in all-caps, ma non è necessario
+        const PI = 3.14;
+
+        console.log(typeof PI);
+        console.log(typeof presenza);
+        console.log(typeof nomeStudente);
+    </script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

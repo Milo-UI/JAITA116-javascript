@@ -1,0 +1,1 @@
+console.log("Ma ora passiamo alle variabili");
