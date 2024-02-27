@@ -4,7 +4,7 @@ let eta = 32;
 let citta = "Torino";
 let paese = "Italia";
 
-let presentazione = nome + cognome + eta + citta + paese;
+let presentazione = nome + " " + cognome + " " + eta + " " + citta + " " + paese;
 
 console.log(presentazione);
 
