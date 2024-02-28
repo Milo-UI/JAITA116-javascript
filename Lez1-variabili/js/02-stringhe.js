@@ -48,7 +48,7 @@ console.log(firstNameLength);
 console.log(typeof firstNameLength);
 
 // Se invece volessimo trovare la prima lettere di una stringa possiamo utilizzare la bracket notation
-let firstLetterOfFirstName = firstName[0]; // in JavaScript si inizia a contare da 0 e non da 1. Se avessimo voluto prendere la terza lettera in Milo, avremmo dovuto scrivere firstName[2]
+let firstLetterOfFirstName = firstName[0]; // le stringhe sono 0-based, quindi si inizia a contare da 0 e non da 1. Se avessimo voluto prendere la terza lettera in Milo, avremmo dovuto scrivere firstName[2]
 console.log(firstLetterOfFirstName);
 
 // È possibile ricavare l'ultimo carattere di una stringa anche se non se ne conosce la lunghezza esatta
@@ -126,8 +126,23 @@ let strEs = "I topi non avevano nipoti";
 /* ------------------------------- Esercizio 2 ------------------------------ */
 // Elabora uno script per estrarre l'estensione di un file
 // "immagineBG.jpg" -> "L'estensione del file è: jpg"
+let nomeFile = "immagineBG.jpg";
+let estensione = nomeFile.split('.').pop();
+console.log("L'estensione del file è: " + estensione);
 
 /* ------------------------------- Esercizio 3 ------------------------------ */
 // Elabora uno script per fare la seguente manipolazione:
 // oggi sono a lezione -> Oggi Sono A Lezione
 // Uppercase della prima lettera di ogni singola parola
+let frase = "oggi sono a lezione";
+
+let fraseArray = frase.split(' ');
+let nuovaFrase = "";
+
+for (let i = 0; i < fraseArray.length; i++) {
+    let inizialeMaius = fraseArray[i][0].toUpperCase();
+    let restoParola = fraseArray[i].substring(1);
+    nuovaFrase += inizialeMaius + restoParola + " ";
+}
+
+console.log(nuovaFrase);
