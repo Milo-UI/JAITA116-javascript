@@ -78,7 +78,16 @@ for (let i = 0; i < colori.length; i++) {
         - Il secondo i prezzi dei prodotti
     - Stampare in console il secondo elemento dell'array e il suo prezzo
     - Popolare la lista della spesa che ha id lista con un list element per ogni prodotto che contenga il nome del prodotto e il suo costo
+   
     - Calcolare il totale dei prezzi dei prodotti e scriverlo nel paragrafo con id totale
+
+    - Costruire un elemento html p nel quale verrà stampata l' IVA(22%)
+    
+    - Costruire un elemento html p nel quale verrà stampato il subtotale, cioè il totale scontato dell'iva
+
+    - (Da fare per ultimo). All'avvio della pagina comparirà un popup nel quale verrà chiesto il nome dell'utente. Questo nome verrà stampato in un tag h1 riportante il seguente testo: "Scontrino di nomeUtente"
+
+    MINIMO 8 prodotti
 */
 // Esempio per recuperare un elemento HTML tramite il suo ID
 let elLista = document.getElementById('lista');
