@@ -53,5 +53,26 @@ b -= 9;
 c *= 7;
 d /= 2;
 
-/* -------------------------------- Esercizio ------------------------------- */
+/* -------------------------------- Esercizio 1 ----------------------------- */
 // Chiediamo all'utente in che anno è nato e diciamogli quanti anni ha
+let annoNascita = prompt('In che anno sei nato?');
+let annoCorrente = 2024;
+let eta = annoCorrente - annoNascita;
+let messaggio = "<h2>Quest'anno avrai " + eta + " anni</h2>";
+
+document.write(messaggio);
+
+/* ------------------------------- Esercizio 2 ------------------------------ */
+// Scrivere un programma che calcola il perimetro e l’area di un triangolo avente i lati della seguente lunghezza: 5,6,7
+let lato1 = 5;
+let lato2 = 6;
+let lato3 = 7;
+
+let perimetro = lato1 + lato2 + lato3;
+console.log(perimetro);
+
+let semiPerimetro = perimetro / 2;
+
+let area = Math.sqrt(semiPerimetro * ((semiPerimetro - lato1) * (semiPerimetro - lato2) * (semiPerimetro - lato3)));
+
+console.log(area);
