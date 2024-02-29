@@ -1,9 +1,11 @@
 Esercizio 1 - Scrivere un programma che calcola il perimetro e l’area di un triangolo avente i lati della  seguente lunghezza: 5,6,7. 
 
-Esercizio 2 - Crea un form con due caselle di input e un pulsante. Nella prima casella verrà inserito l’anno di  nascita dell’utente, nella seconda verrà inserito l’anno corrente oppure un anno a scelta. Al click sul  bottone verrà calcolata l’età dell’utente. 
+Esercizio 2 - Crea un form con due caselle di input e un pulsante. Nella prima casella verrà inserito l’anno di  nascita dell’utente, nella seconda verrà inserito l’anno corrente oppure un anno a scelta. Al click sul  bottone verrà calcolata l’età dell’utente.
+
 Esercizio 3 - Programma che esegue il prodotto tra due numeri chiesti all’utente tramite form. Scrivere il diagramma di flusso e creare l’algoritmo 
 
 Esercizio 4 – Programma che esegue la divisione e la moltiplicazione tra due numeri. L’utente potrà  scegliere tramite pulsante quale delle due operazioni eseguire (form input). Il risultato va mostrato in HTML 
+
 Esercizio 5 – Scrivere un programma che estrae e stampa in console l’estensione di un file  Es: fileEsercitazione.pdf 🡪 pdf oppure index.html 🡪 html 
 
 Esercizio 6 – Scrivere un programma che crea una nuova stringa, a partire da una fornita, aggiungendo due  lettere iniziali: Ja. Se la parola fornita comincia con Ja allora verrà semplicemente restituita senza aggiunta 
