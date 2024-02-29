@@ -89,9 +89,37 @@ for (let i = 0; i < colori.length; i++) {
 
     MINIMO 8 prodotti
 */
-// Esempio per recuperare un elemento HTML tramite il suo ID
-let elLista = document.getElementById('lista');
-let elTotale = document.getElementById('totale');
 
-// Esempio di stampa in un elemento HTML
-// elTotale.innerHTML = "Costo totale della spesa = €" + totale;
+let prodotti = ["Pane", "Nutella", "Biscotti", "Pasta", "Carne", "Insalata", "Birra", "Farina"];
+let prezzi = [1.80, 5.66, 2.00, 0.75, 12, 0.90, 2.45, 1];
+
+//getElementById() recupero una porzione di HTML
+let lista = document.getElementById("lista"); //HTMLElement
+let totale = document.getElementById("totale"); //HTMLElement
+
+//Questa è una variabile di supporto, inizializzata a 0, verrà incrementata dal ciclo for
+let grandTotal = 0;
+
+for(let i = 0; i < prezzi.length; i++){
+    console.log(prodotti[i], prezzi[i]);
+    
+    lista.innerHTML += "<li>" + prodotti[i] + " " + prezzi[i].toFixed(2) + " €" + "</li>";
+    
+    grandTotal += prezzi[i] ;
+}
+
+totale.innerHTML = "Totale: € " + grandTotal.toFixed(2);
+
+let IVApagata = grandTotal * 0.22;
+let subTotale = grandTotal - IVApagata;
+
+let iva = document.getElementById("iva");
+let subTot = document.getElementById("subTot");
+
+iva.innerHTML = "Costo Iva(22%) : " + IVApagata.toFixed(2) + " €";
+subTot.innerHTML = "Subtotale: " + subTotale.toFixed(2) + " €"
+
+let nomeUtente = prompt("Ciao Utente, scrivi il tuo nome");
+
+let elBenvenuto = document.getElementById("elBenvenuto");
+elBenvenuto.innerHTML= "Scontrino di " + nomeUtente;
