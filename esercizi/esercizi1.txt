@@ -1,0 +1,37 @@
+Esercizio 1 - Scrivere un programma che calcola il perimetro e l’area di un triangolo avente i lati della  seguente lunghezza: 5,6,7. 
+
+Esercizio 2 - Crea un form con due caselle di input e un pulsante. Nella prima casella verrà inserito l’anno di  nascita dell’utente, nella seconda verrà inserito l’anno corrente oppure un anno a scelta. Al click sul  bottone verrà calcolata l’età dell’utente. 
+Esercizio 3 - Programma che esegue il prodotto tra due numeri chiesti all’utente tramite form. Scrivere il diagramma di flusso e creare l’algoritmo 
+
+Esercizio 4 – Programma che esegue la divisione e la moltiplicazione tra due numeri. L’utente potrà  scegliere tramite pulsante quale delle due operazioni eseguire (form input). Il risultato va mostrato in HTML 
+Esercizio 5 – Scrivere un programma che estrae e stampa in console l’estensione di un file  Es: fileEsercitazione.pdf 🡪 pdf oppure index.html 🡪 html 
+
+Esercizio 6 – Scrivere un programma che crea una nuova stringa, a partire da una fornita, aggiungendo due  lettere iniziali: Ja. Se la parola fornita comincia con Ja allora verrà semplicemente restituita senza aggiunta 
+Es: Torino 🡪 JaTorino Javascript 🡪 Javascript 
+
+Esercizio 7 – Scrivere un programma per trovare il valor più vicino a 100 tra una coppia di numeri forniti, se  sono uguali ritorna un avviso 
+
+Esercizio 8 – Scrivere un programma che inverte una parola fornita in un campo di testo nel HTML e un  bottone che chiama la funzione  
+Esercizio 9 – Scrivi un programma che accetta una frase come parametro e imposta in upper-case l’iniziale  di ogni singola parola 
+Es: oggi andrò a lezione 🡪 Oggi Andrò A Lezione 
+
+Esercizio 10 – Crea una funzione in javascript per generare una stringa di caratteri casuali specificandone la  lunghezza. Utilizza l’intero alfabeto e i numeri (form input) 
+
+Esercizio 11 – Scrivi un programma che accetta due numeri interi e mostra il maggiore tra i due. (Utilizza  window.prompt e .alert) 
+
+Esercizio 12 – Esercizio 8 utilizzando un ciclo for 
+
+Esercizio 13 - Scrivi un programma che stampa tutti gli interi da 1 a 100. Per i multipli di 3 stampa “Ciao”,  per i multipli di 5 stampa “Mondo”. Per i multipli sia di 3 , sia di 5 stamperà “Ciao, Mondo” 
+
+Esercizio 14 – Scrivi un programma per trasformare un array di elementi (stringhe) in un’unica stringa,  utilizza tutti i metodi che conosci  
+
+Esercizio 15 – Scrivi un programma per pescare un elemento a caso in un array di numeri 
+
+Esercizio 16 – Trova la parola all’interno del seguente testo: 
+“Java Lorem ipsum sit dolor Java aliqua clara et pulcra sunt Java”, quando la trovi stampa la parola,  altrimenti stampa: “parola non trovata”.
+
+Esercizio 17 - Crea una pagina web in cui è possibile vedere l’aggiornamento della data istantaneamente. In base alle ore del giorno stampa un saluto:
+dalle 00 alle 02 -> Buona notte
+dalle 02 alle 12 -> Buon giorno
+dalle 12 alle 21 -> Buona sera
+dalle 21 alle 24 -> Buona notte
