@@ -14,6 +14,7 @@ Es: Torino 🡪 JaTorino Javascript 🡪 Javascript
 Esercizio 7 – Scrivere un programma per trovare il valore più vicino a 100 tra una coppia di numeri forniti, se  sono uguali ritorna un avviso 
 
 Esercizio 8 – Scrivere un programma che inverte una parola fornita in un campo di testo nel HTML e un  bottone che chiama la funzione  
+
 Esercizio 9 – Scrivi un programma che accetta una frase come parametro e imposta in upper-case l’iniziale  di ogni singola parola 
 Es: oggi andrò a lezione 🡪 Oggi Andrò A Lezione 
 
