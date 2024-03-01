@@ -20,3 +20,30 @@ Scrivi un programma che stampa in console un pattern come il seguente triangolo,
 123
 1234
 12345
+
+Es6 Costruisci in console i seguente pattern:
+* * * * *
+* * * *
+* * *
+* *
+*
+
+*
+* *
+* * *
+* * * *
+* * *
+* *
+*
+
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+
+     *
+    * *
+   *   *
+  *     *
+ * * * * * 
