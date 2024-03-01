@@ -11,9 +11,9 @@ Esercizio 5 – Scrivere un programma che estrae e stampa in console l’estensi
 Esercizio 6 – Scrivere un programma che crea una nuova stringa, a partire da una fornita, aggiungendo due  lettere iniziali: Ja. Se la parola fornita comincia con Ja allora verrà semplicemente restituita senza aggiunta 
 Es: Torino 🡪 JaTorino Javascript 🡪 Javascript 
 
-Esercizio 7 – Scrivere un programma per trovare il valore più vicino a 100 tra una coppia di numeri forniti, se  sono uguali ritorna un avviso 
+Esercizio 7 – Scrivere un programma per trovare il valore più vicino a 100 tra una coppia di numeri forniti, se sono uguali ritorna un avviso 
 
-Esercizio 8 – Scrivere un programma che inverte una parola fornita in un campo di testo nel HTML e un  bottone che chiama la funzione  
+Esercizio 8 – Scrivere un programma che inverte una parola fornita in un campo di testo nel HTML e un bottone che chiama la funzione  
 
 Esercizio 9 – Scrivi un programma che accetta una frase come parametro e imposta in upper-case l’iniziale  di ogni singola parola 
 Es: oggi andrò a lezione 🡪 Oggi Andrò A Lezione 

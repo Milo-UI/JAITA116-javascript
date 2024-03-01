@@ -1,0 +1,22 @@
+PRIMA PARTE
+
+ES1 Scrivi, utilizzando if-statement, un programma per trovare il numero più grande tra 5 numeri. Mostra sulla pagina i 5 numeri scelti in una lista non ordinata e in un paragrafo sottostante indica qual è il numero più grande.
+
+Es2 Scrivi un loop che itera da 0 a 15. Per ogni ciclo controlla se il numero è pari o dispari. Mostra il risultato in console.
+
+Es3 Scrivi un programma per costruire in console il seguente pattern.
+*  
+* *  
+* * *  
+* * * *  
+* * * * *
+
+Es4 Scrivi un programma che somma i multipli di 3 e multipli di 5 sotto il numero 1000. ris: 233168
+
+Es5
+Scrivi un programma che stampa in console un pattern come il seguente triangolo, chiedendo all'utente il numero di righe tramite un prompt:
+1
+12
+123
+1234
+12345
