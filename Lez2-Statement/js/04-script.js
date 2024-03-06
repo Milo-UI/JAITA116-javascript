@@ -12,9 +12,20 @@
 // Il ciclo for seguente stamperà in console i primi 5 elementi dell'array. Tra le parentesi tonde inizializza una variabile i (indice) e le dà valore 0, pone la condizione che questa variabile debba essere minore di 5 e ogni volta che la condizione viene rispettata, esegue il blocco di codice e incrementa di 1 il valore di i. Quando il valore supererà 4, la condizione non verrà più rispettata e il blocco di codice nbon verrà eseguito un'altra volta
 let colori = ["verde", "rosso", "blu", "bianco", "giallo"];
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < colori.length; i++) {
     console.log(colori[i]); // Stampa in console l'elemento dell'array con indice i
 }
 
+console.log(colori[colori.length - 1]); //stampo l'ultimo elemento dell'array
+
+for(let i = 1; i <= 100; i++ ){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log(i + " Questi sono buoni !!!");
+    }else if( i % 3 == 0){
+        console.log(i + " eccoloooo !!");
+    }else{
+        console.log(i);
+    }
+}
 //tutti gli altri tipi di for
 //Nested Statement
