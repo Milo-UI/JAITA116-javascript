@@ -10,16 +10,34 @@
     - collegare un file css e rendere guardabile la pagina
 */
 
+let elTweet = document.getElementById('tweet');
 let btnTweet = document.getElementById('btnTweet');
+let btnColore = document.getElementById('btnColore');
+let demo = document.getElementById('demo');
 
+function inviaTweet() {
+    let tweet = elTweet.value;
 
+    if (tweet.trim() == "") {
+        demo.innerHTML = "<p>Non hai scritto niente</p>"
+    } else {
+        demo.innerHTML = "<p>" + tweet + "</p>";
+    }
 
+    elTweet.value = '';
+}
 
-
-
-
+function cambiaColore() {
+    // hasAttribute, setAttribute, removeAttribute
+    if (demo.hasAttribute('style')) {
+        demo.removeAttribute('style');
+    } else {
+        demo.setAttribute('style', 'color: green;')
+    }
+}
 
 
 // ATTENZIONE: le funzioni degli event listener non hanno le parentesi tonde, MAI!!
 // oggettoHTML.addEventListener("evento", funzione);
 btnTweet.addEventListener('click', inviaTweet);
+btnColore.addEventListener('click', cambiaColore);
