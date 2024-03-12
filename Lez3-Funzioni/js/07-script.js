@@ -28,7 +28,11 @@ function inviaTweet() {
 }
 
 function cambiaColore() {
-    // hasAttribute, setAttribute, removeAttribute
+    /*  
+        hasAttribute controlla se l'elemento ha quell'attributo, 
+        setAttribute assegna un attributo e il suo valore, 
+        removeAttribute rimuove un attributo
+    */
     if (demo.hasAttribute('style')) {
         demo.removeAttribute('style');
     } else {
