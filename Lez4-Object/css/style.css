@@ -1,0 +1,24 @@
+/* Selettore per tag */
+body {
+	background-color: #191414;
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selettore per ID */
+#playlist {
+}
+
+/* Selettore per classi */
+.box-canzone {
+	display: inline-block;
+	border: 2px solid #1db954;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin: 0 0.5rem 0.5rem 0;
+}
+
+.box-canzone p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
