@@ -38,3 +38,7 @@ function stampaCanzoni() {
 }
 
 stampaCanzoni();
+
+/* 
+    Far inserire all'utente una nuova canzone attraverso un form e visualizza la playlist aggiornata.
+*/
