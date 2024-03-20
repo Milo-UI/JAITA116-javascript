@@ -1,0 +1,26 @@
+Costruisci una playlist in base agli utenti.
+Ogni utente che "entra" sulla pagina potrà scegliere di inserire una sua playlist. 
+L'utente dovrà compilare dei campi con il suo nome, cognome e genere musicale preferito.
+Ci sarà poi un altro form nel quale inserirà le canzoni da abbinare alla playlist.
+
+Ci sarà un pulsante "Stampa le playlist" il quale stamperà tutte le playlist di tutti gli utenti.
+
+Info tecniche
+Form Utente              |Form canzone
+|nome                    |titolo*
+|cognome                 |album*
+|generePreferito         |artista*
+                         |link video Youtube (opz.)
+                         |"btnCarica"
+_____________________________________
+
+"btnStampaTuttePlaylist"
+
+_____________________________________
+--Playlist Dario:
+    -Canzone 1 (play: collegamento a Youtube / embed)
+    -Canzone 2 (play: collegamento a Youtube)
+    -Canzone 3 (play: collegamento a Youtube)
+    -Canzone 4 (play: collegamento a Youtube) 
+    -Canzone 5 (play: collegamento a Youtube)
+    (Creata il : 20/03/2024)

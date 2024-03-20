@@ -17,7 +17,7 @@ class Docente extends Persona {
     constructor(nome, cognome, eta, genere, interessi, materia) {
         // super richiama le proprietà ereditate dal genitore, consentendo di fare riferimento alla superclasse
         super(nome, cognome, eta, genere, interessi);
-
+       
         this.materia = materia;
     }
 
