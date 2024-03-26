@@ -1,0 +1,21 @@
+body {
+	background-color: #313132;
+	color: #d6d6d6;
+}
+
+.txt-blue {
+	color: #3048d4;
+}
+
+.txt-red {
+	color: #d44030;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.imgRes {
+	width: 300px;
+	height: auto;
+}
