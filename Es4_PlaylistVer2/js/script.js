@@ -50,7 +50,7 @@ class Canzone {
     }
 
     stampaCanzone() {
-        let infoCanzone = `${this.titolo} ${this.album} ${this.artista} <a href="${this.linkYT}" target="_blank">Ascolta su YouTube</a>`;
+        let infoCanzone = `<span>${this.titolo}</span> <span>${this.album}</span> <span>${this.artista}</span> <a class="btn" href="${this.linkYT}" target="_blank">Ascolta su YouTube</a>`;
         return infoCanzone;
     }
 }

@@ -29,6 +29,9 @@ h3 {
 .form-utente,
 .form-canzone {
 	flex: 1;
+	/* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
 }
 
 input {
@@ -38,4 +41,47 @@ input {
 	margin-bottom: 1rem;
 	border-radius: 6px;
 	border: none;
+}
+
+button,
+.btn {
+	color: #191414;
+	background-color: #1db954;
+	border: 1px solid #1db954;
+	border-radius: 6px;
+	padding: 0.79rem 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.btn:hover {
+	color: #ffffff;
+	background-color: #16873e;
+	border-color: #16873e;
+}
+
+#btnStampaPlaylist {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#feedback {
+	color: #b9341d;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	display: flex;
+	column-gap: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+li span {
+	flex: 1;
 }
