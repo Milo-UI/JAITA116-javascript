@@ -104,3 +104,72 @@ function stampaPlaylist() {
 
 btnCarica.addEventListener('click', aggiungiCanzone);
 btnStampaPlaylist.addEventListener('click', stampaPlaylist);
+
+/* ------------------------------- versione 2 ------------------------------- */
+
+// class Utente {
+//     /**
+//      * @param {string} nome 
+//      * @param {string} cognome 
+//      * @param {string} generePreferito 
+//      */
+//     constructor(nome, cognome, generePreferito) {
+//         this.nome = nome;
+//         this.cognome = cognome;
+//         this.generePreferito = generePreferito;
+//     }
+// }
+
+// class Canzone extends Utente {
+//     /**
+//      * @param {string} nome 
+//      * @param {string} cognome 
+//      * @param {string} generePreferito 
+//      * @param {string} titolo 
+//      * @param {string} album 
+//      * @param {string} artista 
+//      * @param {string} linkYT 
+//      */
+//     constructor(nome, cognome, generePreferito, titolo, album, artista, linkYT) {
+//         super(nome, cognome, generePreferito);
+//         this.titolo = titolo;
+//         this.album = album;
+//         this.artista = artista;
+//         this.linkYT = linkYT;
+//     }
+// }
+
+// let playlistUtente = [];
+
+// function caricaDati() {
+//     let nomeUtente = elNomeUtente.value;
+//     let cognomeUtente = elCognomeUtente.value;
+//     let generePref = elGenerePref.value;
+//     let titolo = elTitolo.value;
+//     let album = elAlbum.value;
+//     let artista = elArtista.value;
+//     let linkYT = elLinkYT.value;
+
+//     playlistUtente.push(new Canzone(nomeUtente, cognomeUtente, generePref, titolo, album, artista, linkYT))
+
+//     elTitolo.value = '';
+//     elAlbum.value = '';
+//     elArtista.value = '';
+//     elLinkYT.value = '';
+
+//     console.log(playlistUtente);
+// }
+
+// btnCarica.addEventListener('click', caricaDati);
+
+// function stampaPlaylist() {
+//     elPlaylist.innerHTML = '';
+
+//     nomePlaylist.innerHTML = `Playlist di ${playlistUtente[0].nome}`;
+
+//     playlistUtente.forEach(canzone => {
+//         elPlaylist.innerHTML += `<li><span>${canzone.titolo}</span> <span>${canzone.album}</span> <span>${canzone.artista}</span> <span><a href="${canzone.linkYT}" class="btn" target="_blank">Ascolta su YouTube</a></span></li>`;
+//     });
+// }
+
+// btnStampaPlaylist.addEventListener('click', stampaPlaylist);
