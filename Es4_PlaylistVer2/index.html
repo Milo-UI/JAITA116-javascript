@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Playlist</title>
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
-    <h1>Playlist</h1>
 
-    
+    <div class="container">
 
+        <h1>Playlist</h1>
+
+        <section class="sez-form">
+
+            <div class="form-utente">
+                <h2>Registrati</h2>
+                <input type="text" id="elNomeUtente" placeholder="Inserisci nome">
+                <input type="text" id="elCognomeUtente" placeholder="Inserisci cognome">
+                <input type="text" id="elGenerePref" placeholder="Inserisci il tuo genere preferito">
+            </div>
+
+            <div class="form-canzone">
+                <h2>Aggiungi una canzone alla playlist</h2>
+                <input type="text" id="elTitolo" placeholder="Titolo canzone">
+                <input type="text" id="elAlbum" placeholder="Album canzone">
+                <input type="text" id="elArtista" placeholder="Artista canzone">
+                <input type="text" id="elLinkYT" placeholder="Link a YouTube">
+
+                <button id="btnCarica">Carica</button>
+
+                <div id="feedback"></div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <button id="btnStampaPlaylist">Stampa playlist</button>
+
+            <h2 id="nomePlaylist"></h2>
+
+            <ul id="elPlaylist"></ul>
+
+        </section>
+
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
