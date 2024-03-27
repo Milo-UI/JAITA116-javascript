@@ -3,6 +3,7 @@ let listaFilm = document.querySelector('#listaFilm');
 // createElement() crea un nuovo elemento HTML (oggetto) passando il nome del tag
 let nuovoLi = document.createElement('li'); // <li></li>
 
+
 // createTextNode() crea un nodo testuale da agganciare a un parent
 let nuovoTitoloFilm = document.createTextNode('The Game'); // The Game
 
