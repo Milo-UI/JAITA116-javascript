@@ -1,18 +1,8 @@
 {
-	"utenti": [
-		{
-			"id": 1,
-			"nome": "Milo",
-			"cognome": "Spandre",
-			"età": 32
-		}
-	],
-	"docenti": [
-		{
-			"id": 1,
-			"nome": "Allen",
-			"cognome": "Ingaramo",
-			"materia": "Java"
-		}
+	"pokemon": [
+		{"id": 0, "nome": "Bulbasaur", "tipo": "erba", "abilita": "Foglielama", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png", "spriteSpalle": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png", "info": "Il best boy. Abbastanza socievole se non infastidito"},
+		{"id": 1, "nome": "Charmander", "tipo": "fuoco", "abilita": "Braciere", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png", "spriteSpalle": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png", "info": "In caso vada fuori controllo chiamare 112 e farsi passare i pompieri"},
+		{"id": 2, "nome": "Pikachu", "tipo": "elettrico", "abilita": "tuonoshock", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png", "spriteSpalle": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png", "info": "Coloro i quali lo agganceranno al contatore saranno punibili secondo norma cod. Penale"},
+		{"id": 3, "nome": "Squirtle", "tipo": "acqua", "abilita": "pistolacqua", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png", "spriteSpalle": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png", "info": "Non è un pompiere"}
 	]
 }
