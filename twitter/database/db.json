@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "awfawf",
+      "password": "!Password1",
+      "tweets": [
+        {
+          "tweet": "awfaw awd awd awd awd ",
+          "orarioTweet": "15:42"
+        },
+        {
+          "tweet": "awfawdfvawdc aw deve aw aw",
+          "orarioTweet": "15:46"
+        },
+        {
+          "tweet": "NUOVO TWEET asgefs fsfe aSF Af ewf afe e",
+          "orarioTweet": "15:51"
+        },
+        {
+          "tweet": "ULTIMO TWEET vai in pace",
+          "orarioTweet": "15:58"
+        }
+      ],
+      "avatar": "https://pbs.twimg.com/profile_images/1143032401108578305/8IYSjofV_400x400.jpg",
+      "id": 1
+    }
+  ]
+}

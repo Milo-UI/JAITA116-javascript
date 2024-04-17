@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+}
+
+.bg-twitter {
+	background-color: #1da1f2;
+}
+
+.text-twitter {
+	color: #1da1f2;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.box-attivita {
+	padding: 4rem;
+	border-radius: 1rem;
+	background-color: #fff;
+}
+
+.avatar {
+	max-width: 30px;
+	border-radius: 50%;
+	margin-right: 0.6rem;
+}
