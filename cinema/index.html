@@ -5,27 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema</title>
+    <title>CINEMILO</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- 
         Realizzare l'homepage del sito di un cinema. Questa deve contenere:
-            - un menù di navigazione (responsive)
+            - un menù di navigazione responsive
 
-            - un carosello che riporti le informazioni di un film in ogni 'scheda' (3 film): titolo, locandina, attori, durata, anno e generi. Il carosello deve avere un bottone prev e uno next (indicati da icone e non parole), che fanno scorrere l'array dei film scelti, presentandone uno alla volta. I film devono potersi ripetere, ma sempre nello stesso ordine.
+            - un carosello che riporti le informazioni di un film in ogni 'scheda'(3 film): titolo, locandina, primi 3 attori, durata, anno e generi. Il carosello deve avere un bottone prev e uno next (indicati da icone e non parole), che fanno scorrere l'array dei film scelti, presentandone uno alla volta. I film devono potersi ripetere, ma sempre nello stesso ordine.
 
-            - una sezione di ricerca con un campo di input dentro il quale è possibile scrivere il nome di un film e ottenere al di sotto titolo, locandina e trama breve.
-        
-        Sia per il carosello che per la ricerca, usare l'API di OMDB:
-        Es.: http://www.omdbapi.com/?t=John+Wick&apikey=4214e970
+            - una sezione di ricerca con un campo di input dentro il quale è possibile scrivere il nome di un film e ottenere al di sotto titolo e locandina.
 
-        L'aspetto della pagina deve essere curato, ma è vietato usare Bootstrap. NON DEVE ESSERE UGUALE AL MIO ESEMPIO!!!
+        L'aspetto della pagina deve essere curato, basta che rispetti il wireframe dato ed è VIETATO usare Bootstrap.
 
         --- OPZIONALE ---
-        Il titolo dei film e i nomi degli attori devono diventare dei link alla pagina corrispondente di Wikipedia
+        Il titolo del film e i nomi degli attori, devono diventare dei link alla pagina corrispondente di Wikipedia.
     -->
 
+    <header class="main-header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="#!">CINEMILO</a>
+            </div>
+
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="#!">Chi siamo</a>
+                    </li>
+                    <li>
+                        <a href="#!">Prenota</a>
+                    </li>
+                    <li>
+                        <a href="#!">Offerte</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+
+            <div class="carosello">
+
+                <a id="linkFilm" href="" target="_blank">
+                    <h2 id="titolo"></h2>
+                </a>
+
+                <div class="container-loc-bott">
+                    <button id="prev" onclick="prevMovie()">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <img id="locandina" src="" alt="">
+                    <button id="next" onclick="nextMovie()">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <ul id="attori"></ul>
+
+                <p id="durata"></p>
+                <p id="anno"></p>
+                <p id="genere"></p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-ricerca">
+                    <h2>Cerca un film</h2>
+                    <div>
+                        <label for="filmTitle">Cerca un film</label>
+                        <input type="text" id="filmTitle" placeholder="Inserisci il titolo di un film">
+                        <button id="btnCerca">Cerca</button>
+                    </div>
+
+                    <div id="trama"></div>
+                </div>
+
+                <div class="col-risultato">
+                    <h2 id="titoloRicerca"></h2>
+                    <img id="posterRicerca" src="" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

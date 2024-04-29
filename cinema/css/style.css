@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	color: #ebebeb;
+	line-height: 1.5;
+	background-color: #252525;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+section {
+	padding: 3rem 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+img {
+	max-width: 100%; /*rende fluide le immagini*/
+	height: auto;
+}
+
+button {
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.75rem;
+	cursor: pointer;
+	border: 2px solid #ebebeb;
+	color: #ebebeb;
+	background-color: transparent;
+	transition: all 0.2s;
+}
+
+input {
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.75rem;
+	border: 2px solid #ebebeb;
+}
+
+/* ---------------------------------- MENÙ ---------------------------------- */
+.main-header {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	z-index: 1;
+}
+
+.main-header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo a {
+	position: relative;
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-menu {
+	display: none;
+}
+
+.main-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu a {
+	color: #252525;
+	text-decoration: none;
+}
+
+.menu-icon {
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+}
+
+.main-header.is-mobile-open .main-menu {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-header.is-mobile-open .logo a,
+.main-header.is-mobile-open .menu-icon {
+	color: #252525;
+	border-color: #252525;
+	z-index: 1;
+}
+
+.main-header.is-mobile-open .main-menu ul {
+	display: flex;
+	gap: 1.5rem;
+	/*inverto assi flexbox*/
+	flex-direction: column;
+	align-items: center;
+}
+
+/* -------------------------------- CAROSELLO ------------------------------- */
+
+.carosello {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carosello a {
+	color: #ebebeb;
+	transition: all 0.2s;
+}
+
+.carosello a:hover {
+	color: #fff;
+}
+
+#titolo {
+	text-align: center;
+}
+
+#titolo i {
+	margin-left: 0.8rem;
+}
+
+.container-loc-bott {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	/* width: 50%; */
+}
+
+#prev i,
+#next i {
+	font-size: 1.5rem;
+}
+
+#prev:hover,
+#next:hover {
+	color: #535353;
+	background-color: #ebebeb;
+}
+
+#locandina {
+	width: auto;
+	height: 400px;
+}
+
+#attori {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+}
+
+#attori li,
+#genere span {
+	margin-right: 0.5rem;
+}
+
+#attori li:last-child,
+#genere span:last-child {
+	margin-right: 0;
+}
+
+#attori li::after {
+	content: "-";
+	margin-left: 0.5rem;
+}
+
+#genere span::after {
+	content: ",";
+}
+
+#attori li:last-child:after,
+#genere span:last-child:after {
+	content: "";
+}
+
+#durata,
+#anno,
+#genere {
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+/* --------------------------------- RICERCA -------------------------------- */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 1rem;
+}
+
+.col-ricerca {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.col-ricerca h3 {
+	margin-bottom: 0;
+}
+
+.col-ricerca div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.col-ricerca input {
+	margin-bottom: 1rem;
+}
+
+.col-ricerca label {
+	margin-bottom: 0.5rem;
+}
+
+.col-ricerca button {
+	margin-left: auto;
+}
+
+.col-risultato {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+	/* ---------------------------------- MENÙ ---------------------------------- */
+	.main-menu {
+		display: block;
+	}
+
+	.main-menu ul {
+		display: flex;
+		list-style-type: none;
+		align-items: center;
+		column-gap: 1.5rem;
+	}
+
+	.main-menu a {
+		color: white;
+	}
+
+	.menu-icon {
+		display: none;
+	}
+
+	/* -------------------------------- CAROSELLO ------------------------------- */
+
+	/* --------------------------------- RICERCA -------------------------------- */
+	.col-ricerca {
+		width: calc((50% - 1rem) + (1rem / 2));
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+
+	.col-risultato {
+		width: calc((50% - 1rem) + (1rem / 2));
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
