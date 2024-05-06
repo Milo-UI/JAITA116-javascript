@@ -1,3 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	color: #ebebeb;
+	background-color: #252525;
+	padding: 2rem 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+a {
+	color: rgb(233, 158, 158);
+}
+
+.red {
+	color: red;
+}
+
+.fontUp {
+	font-size: 3rem;
+}
+
+.bg-white {
+	background-color: rgb(147, 147, 147);
+}
+
+.bordo {
+	border: 1rem dashed tomato;
+}
+
+.txtViola {
+	color: violet;
+}
+
+.grassetto {
+	font-weight: bold;
+}
+
+.txtOrange {
+	color: orange;
+}
+
+body {
+	overflow: hidden;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+	display: block;
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	appearance: none;
+	border-radius: 0.25rem;
+}
+
 body {
 	overflow: hidden;
 }
