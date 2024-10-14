@@ -29,7 +29,7 @@ let sottUno = 98;
 sottUno--;
 console.log(sottUno);
 
-// Possiamo utilizzare JavaScript anche per calcolare il resto. Questa operazione può essere usata anche per determinare se un numero è pari o dispari: se dividendo il velore per 2 il risultato è un numero intero, allora il numero è pari
+// Possiamo utilizzare JavaScript per calcolare il resto. Questa operazione può essere usata anche per determinare se un numero è pari o dispari: se dividendo il valore per 2 il risultato è un numero intero, allora il numero è pari
 let resto;
 resto = 11 % 3; // Il 3 sta 3 volte nell'11, 3+3+3 = 9, per arrivare a 11 manca 2, quindi il risultato è 2
 console.log(resto);
