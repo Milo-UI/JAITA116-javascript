@@ -19,67 +19,112 @@ btnMenu.addEventListener("click", addMenuClass);
 
 /* --------------------------- GESTIONE CAROSELLO --------------------------- */
 
-let titolo = document.querySelector('#titolo');
-let locandina = document.querySelector('#locandina');
-let attori = document.querySelector('#attori');
-let durata = document.querySelector('#durata');
-let anno = document.querySelector('#anno');
-let genere = document.querySelector('#genere');
-let linkFilm = document.querySelector('#linkFilm');
+let titolo = document.querySelector('.titolo');
+let locandina = document.querySelector('.locandina');
+let attori = document.querySelector('.attori');
+let durata = document.querySelector('.durata');
+let anno = document.querySelector('.anno');
+let genere = document.querySelector('.genere');
+let linkFilm = document.querySelector('.link-film');
 
 
-class Film {
-    /**
-     * 
-     * @param {String} titolo 
-     * @param {String} locandina 
-     * @param {String[]} attori 
-     * @param {String} durata 
-     * @param {String} anno 
-     * @param {String} genere 
-     * @param {String} linkFilm 
-     */
-    constructor(titolo, locandina, attori, durata, anno, genere, linkFilm) {
-        this.titolo = titolo;
-        this.locandina = locandina;
-        this.attori = attori;
-        this.durata = durata;
-        this.anno = anno;
-        this.genere = genere;
-        this.linkFilm = linkFilm;
-    }
-}
+// class Film {
+//     /**
+//      * 
+//      * @param {String} titolo 
+//      * @param {String} locandina 
+//      * @param {String[]} attori 
+//      * @param {String} durata 
+//      * @param {String} anno 
+//      * @param {String} genere 
+//      * @param {String} linkFilm 
+//      */
+//     constructor(titolo, locandina, attori, durata, anno, genere, linkFilm) {
+//         this.titolo = titolo;
+//         this.locandina = locandina;
+//         this.attori = attori;
+//         this.durata = durata;
+//         this.anno = anno;
+//         this.genere = genere;
+//         this.linkFilm = linkFilm;
+//     }
+// }
 
 let films = [];
 
-function scegliFilm() {
+// function scegliFilm() {
 
-    let filmScelti = [`http://www.omdbapi.com/?t=John+Wick&apikey=4214e970`, `http://www.omdbapi.com/?t=The+Prestige&apikey=4214e970`, `http://www.omdbapi.com/?t=Inception&apikey=4214e970`];
+let filmScelti = [`http://www.omdbapi.com/?t=John+Wick&apikey=4214e970`, `http://www.omdbapi.com/?t=The+Prestige&apikey=4214e970`, `http://www.omdbapi.com/?t=Inception&apikey=4214e970`];
 
-    filmScelti.forEach(filmScelto => {
-        fetch(filmScelto)
-            .then(response => {
-                return response.json();
-            })
-            .then(film => {
-                let attori = film.Actors.split(', ');
-                let generi = film.Genre.split(', ');
-                let linkFilm = `https://it.wikipedia.org/wiki/${film.Title.replace(' ', '_')}`;
+const trovaFilm = async filmScelto => {
+    const response = await fetch(filmScelto);
+    const data = await response.json();
 
-                let filmScelto = new Film(film.Title, film.Poster, attori, film.Runtime, film.Year, generi, linkFilm)
+    console.log(data);
 
-                films.push(filmScelto);
-
-                if (films.length == 1) {
-                    mostraFilm(contatore);
-                }
-            })
-    });
-
-    console.log(films);
+    return data;
 }
 
-scegliFilm();
+filmScelti.forEach(filmScelto => {
+    // fetch(filmScelto)
+    //     .then(response => {
+    //         return response.json();
+    //     })
+    //     .then(film => {
+    //         let attori = film.Actors.split(', ');
+    //         let generi = film.Genre.split(', ');
+    //         let linkFilm = `https://it.wikipedia.org/wiki/${film.Title.replace(' ', '_')}`;
+
+    //         // let filmScelto = new Film(film.Title, film.Poster, attori, film.Runtime, film.Year, generi, linkFilm)
+
+    //         let filmScelto = {
+    //             titolo: film.Title,
+    //             locandina: film.Poster,
+    //             attori: attori,
+    //             durata: film.Runtime,
+    //             anno: film.Year,
+    //             genere: generi,
+    //             linkFilm: linkFilm
+    //         };
+
+    //         films.push(filmScelto);
+
+    //         if (films.length == 1) {
+    //             mostraFilm(contatore);
+    //         }
+    //     })
+
+    trovaFilm(filmScelto)
+        .then(film => {
+            let attori = film.Actors.split(', ');
+            let generi = film.Genre.split(', ');
+            let linkFilm = `https://it.wikipedia.org/wiki/${film.Title.replace(' ', '_')}`;
+
+            // let filmScelto = new Film(film.Title, film.Poster, attori, film.Runtime, film.Year, generi, linkFilm)
+
+            let filmScelto = {
+                titolo: film.Title,
+                locandina: film.Poster,
+                attori: attori,
+                durata: film.Runtime,
+                anno: film.Year,
+                genere: generi,
+                linkFilm: linkFilm
+            };
+
+            films.push(filmScelto);
+
+            if (films.length == 1) {
+                mostraFilm(contatore);
+            }
+        })
+        .catch(err => console.log(err));
+});
+
+console.log(films);
+// }
+
+// scegliFilm();
 
 function mostraFilm(indice) {
     // console.log(films[indice]);
@@ -109,8 +154,8 @@ function mostraFilm(indice) {
 let contatore = 0;
 // mostraFilm(contatore);
 
-let btnPrev = document.querySelector('#prev');
-let btnNext = document.querySelector('#next');
+let btnPrev = document.querySelector('.prev');
+let btnNext = document.querySelector('.next');
 
 function nextMovie() {
     if (contatore < films.length - 1) {
@@ -137,14 +182,13 @@ btnNext.addEventListener('click', nextMovie);
 
 /* -------------------------- GESTIONE RICERCA FILM ------------------------- */
 
-let titoloRicerca = document.querySelector('#titoloRicerca');
-let posterRicerca = document.querySelector('#posterRicerca');
-let trama = document.querySelector('#trama');
-
-let btnCerca = document.querySelector('#btnCerca');
+let titoloRicerca = document.querySelector('.titoloRicerca');
+let posterRicerca = document.querySelector('.posterRicerca');
+let trama = document.querySelector('.trama');
+let formCerca = document.querySelector('.cerca');
 
 function cercaFilm() {
-    let filmTitle = document.querySelector('#filmTitle').value;
+    let filmTitle = formCerca.filmTitle.value;
     filmTitle.replace(' ', '+');
 
     const URL = `http://www.omdbapi.com/?t=${filmTitle}&apikey=4214e970`;
@@ -152,35 +196,36 @@ function cercaFilm() {
 
     // let mioFilm = {};
 
-    fetch(URL)
-        .then(response => {
-            return response.json()
-        })
+    // fetch(URL)
+    //     .then(response => {
+    //         return response.json()
+    //     })
+    trovaFilm(URL)
         .then(mioFilm => {
-            console.log(mioFilm);
-            // mioFilm = data;
+            // console.log(mioFilm);
 
-            // console.log('Il mio film è: ', mioFilm);
-
-            if (mioFilm.Title == undefined) {
-                titolo.innerHTML = 'Film non trovato';
-                poster.setAttribute('src', '');
+            if (mioFilm.Response === 'False') {
+                titoloRicerca.innerHTML = 'Film non trovato';
+                posterRicerca.setAttribute('src', '');
                 trama.innerHTML = '';
             } else {
                 console.log(mioFilm.Title);
                 stampaFilm(mioFilm.Title, mioFilm.Poster, mioFilm.Plot);
             }
         })
-        .catch(error => {
-            console.log(error);
-        })
-
-    function stampaFilm(titoloFilm, posterFilm, tramaFilm) {
-        titoloRicerca.innerHTML = titoloFilm;
-        trama.innerHTML = `<h3>Trama di ${titoloFilm}:</h3>
-                            <p>${tramaFilm}</p>`
-        posterRicerca.setAttribute('src', posterFilm);
-    }
+        .catch(err => console.log(err));
 }
 
-btnCerca.addEventListener('click', cercaFilm);
+function stampaFilm(titoloFilm, posterFilm, tramaFilm) {
+    titoloRicerca.innerHTML = titoloFilm;
+    trama.innerHTML = `
+        <h3>Trama di ${titoloFilm}:</h3>
+        <p>${tramaFilm}</p>
+    `;
+    posterRicerca.setAttribute('src', posterFilm);
+}
+
+formCerca.addEventListener('submit', e => {
+    e.preventDefault();
+    cercaFilm();
+});

@@ -38,7 +38,7 @@ img {
 	height: auto;
 }
 
-button {
+button, input[type='submit'] {
 	padding: 0.5rem 0.75rem;
 	border-radius: 0.75rem;
 	cursor: pointer;
@@ -146,11 +146,11 @@ input {
 	color: #fff;
 }
 
-#titolo {
+.titolo {
 	text-align: center;
 }
 
-#titolo i {
+.titolo i {
 	margin-left: 0.8rem;
 }
 
@@ -162,56 +162,56 @@ input {
 	/* width: 50%; */
 }
 
-#prev i,
-#next i {
+.prev i,
+.next i {
 	font-size: 1.5rem;
 }
 
-#prev:hover,
-#next:hover {
+.prev:hover,
+.next:hover {
 	color: #535353;
 	background-color: #ebebeb;
 }
 
-#locandina {
+.locandina {
 	width: auto;
 	height: 400px;
 }
 
-#attori {
+.attori {
 	display: flex;
 	justify-content: center;
 	list-style: none;
 	padding-left: 0;
 }
 
-#attori li,
-#genere span {
+.attori li,
+.genere span {
 	margin-right: 0.5rem;
 }
 
-#attori li:last-child,
-#genere span:last-child {
+.attori li:last-child,
+.genere span:last-child {
 	margin-right: 0;
 }
 
-#attori li::after {
+.attori li::after {
 	content: "-";
 	margin-left: 0.5rem;
 }
 
-#genere span::after {
+.genere span::after {
 	content: ",";
 }
 
-#attori li:last-child:after,
-#genere span:last-child:after {
+.attori li:last-child:after,
+.genere span:last-child:after {
 	content: "";
 }
 
-#durata,
-#anno,
-#genere {
+.durata,
+.anno,
+.genere {
 	text-align: center;
 	margin: 0.5rem 0;
 }
@@ -235,7 +235,7 @@ input {
 	margin-bottom: 0;
 }
 
-.col-ricerca div {
+.col-ricerca form {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -250,7 +250,7 @@ input {
 	margin-bottom: 0.5rem;
 }
 
-.col-ricerca button {
+.col-ricerca .btn-cerca {
 	margin-left: auto;
 }
 

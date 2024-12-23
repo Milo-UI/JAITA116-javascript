@@ -64,25 +64,25 @@
 
             <div class="carosello">
 
-                <a id="linkFilm" href="" target="_blank">
-                    <h2 id="titolo"></h2>
+                <a class="link-film" href="" target="_blank">
+                    <h2 class="titolo"></h2>
                 </a>
 
                 <div class="container-loc-bott">
-                    <button id="prev" onclick="prevMovie()">
+                    <button class="prev">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
-                    <img id="locandina" src="" alt="">
-                    <button id="next" onclick="nextMovie()">
+                    <img class="locandina" src="" alt="">
+                    <button class="next">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
 
-                <ul id="attori"></ul>
+                <ul class="attori"></ul>
 
-                <p id="durata"></p>
-                <p id="anno"></p>
-                <p id="genere"></p>
+                <p class="durata"></p>
+                <p class="anno"></p>
+                <p class="genere"></p>
 
             </div>
 
@@ -97,18 +97,18 @@
 
                 <div class="col-ricerca">
                     <h2>Cerca un film</h2>
-                    <div>
+                    <form class="cerca">
                         <label for="filmTitle">Cerca un film</label>
-                        <input type="text" id="filmTitle" placeholder="Inserisci il titolo di un film">
-                        <button id="btnCerca">Cerca</button>
-                    </div>
+                        <input type="text" name="filmTitle" placeholder="Inserisci il titolo di un film">
+                        <input type="submit" class="btn-cerca" value="Cerca">
+                    </form>
 
-                    <div id="trama"></div>
+                    <div class="trama"></div>
                 </div>
 
                 <div class="col-risultato">
-                    <h2 id="titoloRicerca"></h2>
-                    <img id="posterRicerca" src="" alt="">
+                    <h2 class="titoloRicerca"></h2>
+                    <img class="posterRicerca" src="" alt="">
                 </div>
 
             </div>
